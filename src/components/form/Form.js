@@ -13,15 +13,22 @@ const Form = () => {
     'Mobile',
     'Inovacao e Gestao'
   ]
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Formulario enviado');
+  }
+
+
   return (
     <section className='form'>
-      <form >
+      <form onSubmit={handleSubmit}>
         <h2>Preencha os dados para criar o colaborador</h2>
-        <CampText label='Nome' placeholder='Digite seu nome' />
-        <CampText label='Cargo' placeholder='Digite seu cargo' />
-        <CampText label='Imagem' placeholder='Digite o endereco da imagem' />
-        <DropDown label='Time' itens={times}/>
-        <Button text='Criar Card' />
+        <CampText obrigatorio={true} label='Nome' placeholder='Digite seu nome' />
+        <CampText obrigatorio={true} label='Cargo' placeholder='Digite seu cargo' />
+        <CampText obrigatorio={true} label='Imagem' placeholder='Digite o endereco da imagem' />
+        <DropDown obrigatorio={true} label='Time' itens={times}/>
+        <Button>Criar Card</Button>
       </form>
     </section>
   );
