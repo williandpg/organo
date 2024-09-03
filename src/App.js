@@ -1,11 +1,11 @@
 import Banner from './components/Banner/Banner';
-import CampText from './components/CampText/CampText';
+import Form from './components/form/Form';
 
 function App() {
   return (
     <div className="App">
       <Banner />
-      <CampText />
+      <Form />
     </div>
   );
 }
