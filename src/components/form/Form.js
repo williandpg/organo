@@ -28,7 +28,7 @@ const Form = () => {
         <CampText obrigatorio={true} label='Cargo' placeholder='Digite seu cargo' />
         <CampText obrigatorio={true} label='Imagem' placeholder='Digite o endereco da imagem' />
         <DropDown obrigatorio={true} label='Time' itens={times}/>
-        <Button>Criar Card</Button>
+        <Button>Criar Colaborador</Button>
       </form>
     </section>
   );
